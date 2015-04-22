@@ -63,4 +63,4 @@ group_by(variables,activity,subject)%>%
 #make the average
 summarize(average=mean(value,na.rm=TRUE))
 #save it!
-write.table(answer,"summary.txt")
+write.table(answer,"summary.txt",row.name=FALSE)
